@@ -43,9 +43,9 @@ if [[ "$BUILD" ]]; then
         make clean
 
         # Extensions (optional)
-        cd contrib
-        make clean
-        cd ..
+        # cd contrib
+        # make clean
+        # cd ..
     }
 fi
 
@@ -54,9 +54,9 @@ if [[ "$FULL" ]]; then
         make distclean
 
         # Extensions (optional)
-        cd contrib
-        make distclean
-        cd ..
+        # cd contrib
+        # make distclean
+        # cd ..
     }
 fi
 

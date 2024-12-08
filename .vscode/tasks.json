@@ -63,7 +63,9 @@
             "type": "shell",
             "command": "${workspaceFolder}/scripts/test.sh",
             "args": [
-                "--regress"
+                "--regress",
+                "-j",
+                "${input:threads}"
             ],
             "problemMatcher": [],
             "group": {
@@ -77,7 +79,9 @@
             "type": "shell",
             "command": "${workspaceFolder}/scripts/test.sh",
             "args": [
-                "--full"
+                "--full",
+                "-j",
+                "${input:threads}"
             ],
             "problemMatcher": []
         },

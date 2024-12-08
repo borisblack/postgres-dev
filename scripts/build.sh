@@ -53,21 +53,18 @@ INSTALL_PATH="$PWD/build"
 # ./configure --prefix="$INSTALL_PATH" \
 #     --enable-debug \
 #     --enable-cassert \
-#     --enable-tap-tests \
-#     --enable-depend \
+#     # --enable-tap-tests \
+#     # --enable-depend \
 #     CFLAGS="-O0 -g" \
 #     CPPFLAGS="-O0 -g"
 
 make $THREADS
-make install
-make install-world-bin
-# sudo make install
-# sudo make install-world-bin
+sudo make install
+sudo make install-world-bin
 
 # Extensions (optional)
 # cd contrib
 # make $THREADS
-# make install
-# # sudo make install
+# sudo make install
 # cd ..
 cd ..

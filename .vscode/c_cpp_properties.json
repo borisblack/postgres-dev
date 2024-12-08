@@ -1,12 +1,16 @@
 {
     "configurations": [
         {
-            "name": "Default",
+            "name": "PostgreSQL/Linux",
             "includePath": [
                 "${workspaceFolder}/postgresql/src/include"
             ],
-            "cStandard": "c17",
-            "cppStandard": "c++17"
+            "defines": [
+                "_GNU_SOURCE"
+            ],
+            "cStandard": "gnu99",
+            "cppStandard": "gnu++03",
+            "intelliSenseMode": "gcc-x64"
         }
     ],
     "version": 4

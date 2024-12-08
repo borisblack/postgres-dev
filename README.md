@@ -1,18 +1,9 @@
-# PostgreSQL development environment
+# PostgreSQL Dev Container environment
 
-1. Run next commands:
-```shell
-chmod +x ./scripts/init.sh
-chmod +x ./scripts/build.sh
-chmod +x ./scripts/test.sh
-chmod +x ./scripts/run.sh
-chmod +x ./scripts/clean.sh
-```
+1. Run the `Setup` task
 
-2. Run the `Setup` task
+2. Run the `Build` task
 
-3. Run the `Build` task
+3. Run the `Test full` task
 
-4. Run the `Test` task
-
-5. Run the `Install` task
+4. Run the `Run psql` task

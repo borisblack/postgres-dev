@@ -65,9 +65,9 @@ fi
 if [ "$FULL" ]; then
     {
         make check-world $THREADS
-        cd contrib
-        make check $THREADS
-        cd ..
+        # cd contrib
+        # make check $THREADS
+        # cd ..
     }
 fi
 

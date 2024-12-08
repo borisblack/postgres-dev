@@ -19,7 +19,7 @@ RUN locale-gen en_US.UTF-8
 RUN useradd -m -d /home/postgres -s /bin/bash postgres \
     && echo postgres:postgres | chpasswd \
     && usermod -a -G sudo postgres \
-    && echo developer ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/postgres
+    && echo postgres ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/postgres
 RUN echo "select pg_backend_pid();" > /home/postgres/.psqlrc
 
 # Postgres environment setup

@@ -59,13 +59,13 @@ done
 if [ "$INIT_DB" ]; then
     {
         # sudo su - postgres -c "initdb -k -D /usr/local/pgsql/data && pg_ctl start"
-        initdb -k -D /usr/local/pgsql/data
+        initdb -k -D /usr/local/pgsql/data || true
     }
 fi
 
 if [ "$RUN_DB" ]; then
     {
-        pg_ctl start
+        pg_ctl start || true
     }
 fi
 
@@ -79,6 +79,6 @@ fi
 
 if [ "$STOP_DB" ]; then
     {
-        pg_ctl stop
+        pg_ctl stop || true
     }
 fi
