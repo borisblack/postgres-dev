@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "genam.h": "c",
-        "heapam.h": "c",
-        "memutils.h": "c"
-    }
-}

@@ -60,6 +60,7 @@ INSTALL_PATH="$PWD/build"
 
 make $THREADS
 sudo make install
+#sudo make install-world # with docs
 sudo make install-world-bin
 
 # Extensions (optional)

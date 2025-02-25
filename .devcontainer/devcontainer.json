@@ -18,7 +18,8 @@
 				"ms-azuretools.vscode-docker",
 				"ms-vscode.cpptools-extension-pack",
 				"ms-vscode.makefile-tools",
-				"ash-blade.postgresql-hacker-helper"
+				"ash-blade.postgresql-hacker-helper",
+				"daohong-emilio.yash"
 			]
 		}
 	}
